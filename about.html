@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <link rel="stylesheet" href="styles/about.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+    <style>
+      .aboutslider {
+          position: relative;
+          height: 450px;
+          width: 550px;
+          margin: 100px auto;
+          background-color: rgb(185, 183, 183);
+          overflow: hidden;
+          margin-top: -300px;
+          margin-left: 650px;
+          
+      }
+      .about {
+          display: flex;
+          transition: transform 0.5s ease;
+      }
+      .s1 {
+          margin-top: 30px;
+          box-sizing: border-box;
+      }
+      img {
+          width: 370px;
+          height: 350px;
+          margin-left: 50px;
+          margin-top: 10px;
+      }
+       .button{
+          display: flex;
+          font-size: 30px;
+          margin-left: 300px;
+          column-gap: 30px;
+          margin-top: 10px;
+       }
+
+
+
+
+       .container {
+            
+            padding: 20px;
+            border-radius: 8px;
+            width:500px;
+            
+            padding-left:100px;
+            
+        }
+        .container h1{
+            font-size:70px;
+            color: rgb(125, 125, 255);
+            margin-left:10px;
+            
+        }
+
+
+       .form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color:rgb(36, 34, 34);
+}
+.form-group input, .form-group textarea {
+    width: 450px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #181717;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+.form-group textarea {
+    resize: none;
+}
+.submit-btn {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+#thank-you-message {
+    display: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #007BFF;
+    text-align: center;
+    padding-top:10px;
+    height:50px;
+    width:500px;
+}
+
+       .for{
+    display: flex;
+    margin-top:200px;
+    
+    
+}
+.for1{
+    background-color: rgb(255, 255, 255);
+    height:600px;
+    width:600px;
+    margin-left: 80px;
+    margin-top: -130px;
+}
+.cat{
+    display: flex;
+    margin-top:100px;
+    margin-left:10px;
+}
+.cat1{
+
+    padding:20px;
+}
+.Aboutdetails{
+    margin-left: 150px;
+    margin-top: 50px;
+    
+}
+.Aboutdetails h1{
+color: #ffffff;
+font-size: 80px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.Aboutdetails h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Aboutdetails  p{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Aboutdetails h3{
+    color:#ffffff;
+
+}  
+  </style>
+  
+
+    
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="images/destinylogo.svg"></img>
+            </div>
+            <div class="line"></div>
+            <div class="nav-bar-list">
+                <ul>
+                    <li><a class="anchor" href="../index.html">Home</a></li>
+                    <li><a href="../About US/about.html">About</a></li>
+                    <li><a href="../room/rooms.html">Rooms</a></li>
+                    <li>
+                        Pages <img src="images/nav-black-star.svg" alt="Star Icon">
+                        <ul>
+                            <li><a href="../services page/service.html">Services</a></li>
+                            <li><a href="../Events/events.html">Events</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact page/contactpage.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="button">Book Now</button>
+        </div>
+    </nav>
+    <main>
+    <div>
+    <div class="Aboutbanner">
+        <div class="Aboutbanner_subtittle">
+           <p> HOTEL <img src="images/banner-text-icon.svg" alt=""> RESORT</p>
+        </div>
+        <h1 class="Aboutbanner_tittle">About Us</h1>
+    </div>
+  
+<div class="Aboutsec_2">
+    <img src="images/sec2img.svg" alt="">
+   
+</div>
+<div class="Aboutpara">
+    <p>Perhaps you're picturing the 
+        <span class=color_change>awe-inspiring sceneries of</span> <br>towering mountains, which create a sense of tranquillity<br> that only nature can deliver. Where fantasies become<br> reality and memories last a lifetime!</p>
+</div>
+  <div class="Aboutsec_3">
+    <div class="Aboutbox1">
+         <img src="images/Aimg1.jpg" alt="">
+    </div>
+   <div class="Aboutbox2">
+    <h1>A carefully designed space for your reconnection.</h1>
+    <p>Nestled among spectacular natural beauty, our thoughtfully constructed<br> environment is committed to nourishing your mind, body, and spirit.<br> Accept tranquillity and serenity as you immerse yourself in a paradise<br> designed to promote inner harmony. Whether you're looking for a<br> rejuvenating getaway or a contemplative trip, our resort is the ideal place<br> to reconnect.</p>
+   <button>Book Now</button>
+</div>
+
+
+  </div> 
+
+  <!--sec4 start here-->
+  <div class="Aboutsec_4">
+    <h1>Relax in Our Exquisite Resort Rooms for a<br> Luxurious Retreat</h1>
+    <p>Our resort, nestled in the centre of stunning nature, offers a refuge of tranquilly and comfort,<br> intended to take your stay to new heights.</p>
+  
+        <div class="home-container1">
+        <div class="home-buttons">
+           <button class="bt1">Latest</button>
+           <button class="bt2">Popular</button>
+           <button class="bt3">Featured</button>
+        </div>
+        <a href=""><button class="btn2">Book All Rooms</button></a>
+   </div>
+
+
+    <div class="home-container">
+       
+
+
+        <div class="home-container2">
+            <div class="home-sub2">
+                <img src="images/backgroundimg1.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+            <div class="home-sub2">
+                <img src="images/waterpic.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+            <div class="home-sub2">
+                <img src="images/egyptimg4.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="home-container3">
+            <div class="home-sub2">
+                <img src="images/slide1.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="home-sub2">
+                <img src="images/slide2.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="home-sub2">
+                <img src="images/slide3.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="home-container4">
+            <div class="home-sub2">
+                <img src="images/slide4.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+            <div class="home-sub2">
+                <img src="images/slide5.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+
+            <div class="home-sub2">
+                <img src="images/Aimg1.jpg">
+                <br>
+                <a>Double Room</a>
+                <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                <hr>
+                <div class="home-subcontainer">
+                    <p>$320.00 USD/night</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+  <!--sec5 Starts here-->
+  <div class="Aboutsec_5">
+    <div class="star1"><img src="images/star1.svg" alt=""></div>
+    <h1>Indulge in a day of exploration<br> at our captivating resort.</h1>
+    <div class="star1"><img src="images/star2.svg" alt=""></div>
+    <iframe src="https://www.youtube.com/embed/NJQpXiugmUg?si=S2JN9WF9SJ-ZhP1A"></iframe>
+  </div>
+  <!--sec6 starts here-->
+   <div class="Aboutsec_6">
+    <h1>A restaurant where dreams come true</h1>
+    <p>Our creative culinary staff weaves stories into flavors, elevating eating to an ethereal experience<br> that surpasses the ordinary.</p>
+    <div class="food">
+        <div class="receipe1">
+          <div class="sub_receipe" id="recipe">
+          <h1>Fruits</h1>
+          <p>fruits that are as vibrant in flavor as<br> they are in colors.</p>
+        </div>
+        </div>
+        <div class="receipe2">
+            <div class="sub_receipe1">
+            <h1>Spicy</h1>
+            <p>Tantalize your taste buds and<br> awaken your senses.</p>
+           </div>
+        </div>
+        <div class="receipe3">
+            <div class="sub_receipe2">
+           <h1>Grains</h1>
+           <p>Comforting aroma of freshly cooked<br> grains.</p>
+        </div>
+        </div>
+    </div>
+  </div>
+<!--Sec7 starts here-->
+<div class="AboutSec_7">
+  
+    <div class="contentsec-7">
+        <h2>Infinity Pool with<br> Panoramic Views</h1>
+        <pre>Gaze out over the vast expanse of nature's wonders as the azure waters<br> combine seamlessly with the sky, producing an infinite sense of peace.<br> Feel your concerns melt away as you bask in the warmth of the sun,<br> touched by the soft wind that whispers through the air. Our Infinity Pool is<br> more than simply a pool.</p>
+        <button>Browse Rooms</button>
+    </div>
+   <!--image slider-->
+   <div class="aboutslider">
+    <div class="about">
+        <div class="s1"><img src="images/slide1.jpg" alt="Slide 1"></div>
+        <div class="s1"><img src="images/slide2.jpg" alt="Slide 2"></div>
+        <div class="s1"><img src="images/slide3.jpg" alt="Slide 3"></div>
+        <div class="s1"><img src="images/slide4.jpg" alt="Slide 4"></div>
+        <div class="s1"><img src="images/slide5.jpg" alt="Slide 5"></div>
+        <div class="s1"><img src="images/slide1.jpg" alt="Slide 5"></div>
+        <div class="s1"><img src="images/slide2.jpg" alt="Slide 5"></div>
+        
+    </div>
+   <div class="button">
+    <div class="btn" onclick="prevSlide()"> 
+        <i class="fa-solid fa-circle-arrow-left"></i>
+    </div>
+    <div class="btn1" onclick="nextSlide()"> 
+        <i class="fa-solid fa-circle-arrow-right"></i>
+    </div>
+   </div>
+</div>
+
+
+
+
+</div>
+
+<!--sec 8 starts here-->
+<div class="Aboutsec_8">
+  <h1>A close-knit crew</h1>
+  <p>Encourage one other to achieve by putting trust and mutual respect at the heart of our relationships,<br> appreciating our individual capabilities while enjoying our collective success</p>
+  <div class="Chef">
+      <div class="chef1">
+        <div class="sub_chef" >
+        <h1>Ricky Dale</h1>
+        <p>fruits that are as vibrant in flavor as<br> they are in colors.</p>
+      </div>
+      </div>
+      <div class="chef2">
+          <div class="sub_chef1">
+          <h1>Lily Rose</h1>
+          <p>Resident Manager</p>
+         </div>
+      </div>
+      <div class="chef3">
+          <div class="sub_chef2">
+         <h1>Bily Bob</h1>
+         <p>Head Chef</p>
+      </div>
+      </div>
+  </div>
+</div>
+
+<!--sec9 starts-->
+<div class="Aboutsec_9">
+    <div class="sub_Faq">
+        <h1>FAQ</h1>
+       <img src="images/faq.jpg" alt=""> 
+    </div>
+
+    <!--about faq questions-->
+
+    <div class="FAQ">
+        <div class="FAQ-heading1">
+            <h1>Resort suitable for families with children?
+                <i class="fa-solid fa-plus icon"></i>
+            </h1>
+            <p style="display: none;" class="FAQtext">To cater to our young customers, our resort is family-friendly and provides services<br>
+                 such as kids' clubs, playgrounds, and family-oriented activities.</p>
+        </div>
+        <div class="FAQ-heading2">
+            <h1>Are pets allowed at the resort?
+                <i class="fa-solid fa-plus icon"></i>
+            </h1>
+            <p style="display: none;" class="FAQtext">In order to preserve a peaceful and comfortable environment, we have<br>
+                 implemented a pet policy that prohibits normal pets from entering the premises.</p>
+        </div>
+        <div class="FAQ-heading3">
+            <h1>What is the check-in and check-out time?
+                <i class="fa-solid fa-plus icon"></i>
+            </h1>
+            <p style="display: none;" class="FAQtext">The check-in and check-out times are both at [time]. Early or late check-in is <br>
+                possible upon request and subject to availability.</p>
+        </div>
+        <div class="FAQ-heading4">
+            <h1>Excursions or activities through the resort?
+                <i class="fa-solid fa-plus icon"></i>
+            </h1>
+            <p style="display: none;" class="FAQtext">Dedicated concierge service to assist you in organising various excursions and<br>
+                 activities to see the area sites.</p>
+        </div>
+        <div class="FAQ-heading5">
+            <h1>How can I make a reservation at the resort?
+                <i class="fa-solid fa-plus icon"></i>
+            </h1>
+            <p style="display: none;" class="FAQtext">You may book directly through our website, by phone, or by contacting your<br>
+                 chosen travel agent. We want to welcome you to our resort soon!.</p>
+        </div>
+      </div>
+    
+
+
+</div>
+
+<!----Sec10 starts here-->
+<div class="Aboutsec-10">
+    <!--contact form-->
+    <div class="for">
+        <div class="for1">
+            <div class="container">
+                <h1>Get in touch</h1>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+                <div id="thank-you-message">Thank you! Your submission has been received.</div>
+            </div>
+        </div>
+       
+    </div>
+   <div class="Aboutdetails">
+    <h1>Contact </h1>
+    <h3>Address ,<br> 5201 Elm Street, Cedar<br>
+        Lane, USA</h3>
+     <h2>Email</h2>
+     <p>info@destinflow.com</p> 
+     <h2>Phone</h2>
+     <p>+23-456-789-01203</p>   
+     
+   </div>
+
+</div>
+
+<!--sec11 starts here-->
+<div class="Aboutsec_11">
+    <div class="newsletter">
+        <div class="news1">
+            <h1>DESTIN FLOW</h1>
+            <p>We provide travelers with a variety of amenities and <br>services tailored to
+                 meet their every need, assuring a<br> comfortable and enjoyable stay.</p>
+        </div>
+        <div class="news2">
+            <h1>Subscribe to our newsletter</h1>
+            <p>click here for the email newsletter form.</p>
+            <input type="email" id="input" placeholder="Please Enter Your Email">
+            <button id="btn">Subscribe</button>
+        </div>
+    </div>
+
+</div>
+<script src="about.js"></script>
+
+
+
+<script>
+  let currentIndex = 0;
+
+  function showSlide(index) {
+      const slides = document.querySelector('.about');
+      const totalSlides = document.querySelectorAll('.s1').length;
+      if (index >= totalSlides) {
+          currentIndex = 0;
+      } else if (index < 0) {
+          currentIndex = totalSlides - 1;
+      } else {
+          currentIndex = index;
+      }
+      slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+  }
+
+  function nextSlide() {
+      showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+      showSlide(currentIndex - 1);
+  }
+
+
+  
+</script>
+
+
+
+</div>
+ 
+
+
+</main>
+
+
+
+</body>
+</html>
